@@ -17,7 +17,6 @@ class PhonebookApp(QMainWindow, design.Ui_MainWindow):
         self.pathToCsv = ''
         self.readFileButton.clicked.connect(self.loadCsv) #  обработчик нажатия на кнопку 'read file'
         self.actionOpenCsv.triggered.connect(self.openCsv)  # обработчик нажатия на пункт меню "open csv"
-        # self.action_save_image_as.triggered.connect(self.fnc_save_image_as)  # обработчик нажатия на пункт меню "save image as"
 
     def setPathToCsv(self, pathToCsv):
         self.pathToCsv = pathToCsv
