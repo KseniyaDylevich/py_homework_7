@@ -8,11 +8,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidgetItem, QHeader
 def main():
     app = QApplication(sys.argv)  # Новый экземпляр QApplication
     window = PhonebookApp()  # Создаём экземпляр класса PhonebookApp
-    #window = FromUiApp()  # Создаём экземпляр класса FromUiApp
-    #widget = QtWidgets.QStackedWidget()
-    #widget.addWidget(window)
     window.show()  # Показываем окно
-    #widget.show()
     app.exec_()  # и запускаем приложение
 
 
