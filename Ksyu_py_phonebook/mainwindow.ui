@@ -59,17 +59,17 @@
      </property>
     </column>
    </widget>
-   <widget class="QPushButton" name="readFileButton">
+   <widget class="QPushButton" name="readCsvButton">
     <property name="geometry">
      <rect>
-      <x>690</x>
+      <x>600</x>
       <y>490</y>
       <width>93</width>
       <height>28</height>
      </rect>
     </property>
     <property name="text">
-     <string>read file</string>
+     <string>read csv file</string>
     </property>
    </widget>
    <widget class="QPushButton" name="saveChangesButton">
@@ -83,6 +83,19 @@
     </property>
     <property name="text">
      <string>save changes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="readExelButton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>490</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>read exel file</string>
     </property>
    </widget>
   </widget>
@@ -100,6 +113,7 @@
      <string>file</string>
     </property>
     <addaction name="actionOpenCsv"/>
+    <addaction name="actionOpenExel"/>
    </widget>
    <widget class="QMenu" name="menucontacts">
     <property name="title">
@@ -119,6 +133,11 @@
   <action name="actionFindContact">
    <property name="text">
     <string>find</string>
+   </property>
+  </action>
+  <action name="actionOpenExel">
+   <property name="text">
+    <string>open exel</string>
    </property>
   </action>
  </widget>
