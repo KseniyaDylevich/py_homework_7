@@ -44,6 +44,7 @@ async def send_read(message: types.Message):
                     if message.text[6:] in item:
                         await message.answer(f'фамилия: {contact[0]}\nимя: {contact[1]}\nтелефон: {contact[2]}\n')
                         rezult += 1
+                        break
             if rezult == 0:
                 await message.answer('совпадений не найдено')
 
